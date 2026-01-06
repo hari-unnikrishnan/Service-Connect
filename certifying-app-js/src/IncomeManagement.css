@@ -1,0 +1,246 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #f5f6fe;
+}
+
+.income-container {
+  display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+  background: #4b3ed8;
+  width: 220px;
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-left: 3.5rem;
+}
+
+.logo-circle {
+  width: 32px;
+  height: 32px;
+  /* background: #ff6b3d; */
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+}
+
+.menu li {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.menu li:hover,
+.menu li.active {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+}
+
+.sidebar-footer {
+  text-align: center;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: white;           /* white background */
+  border-radius: 25px;
+  padding: 6px 12px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  color: black;                /* makes the icon inside appear black */
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding-left: 8px;
+  color: black;                /* text inside input is black */
+  background: transparent;     /* keeps background clean */
+}
+
+.icon {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.profile img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+/* Table */
+.income-table {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  margin: 0 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  width: 78vw;
+}
+
+.income-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.income-table th,
+.income-table td {
+  text-align: left;
+  padding: 12px;
+  font-size: 14px;
+}
+
+.income-table th {
+  color: #777;
+  font-weight: 500;
+  border-bottom: 1px solid #eee;
+}
+
+.income-table tr:hover {
+  background: #f9f9ff;
+}
+
+.edit-icon {
+  color: #4b3ed8;
+  cursor: pointer;
+}
+
+/* Menu Icon */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  color: #4b3ed8;
+  margin-right: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .sidebar {
+    width: 14rem;
+  }
+  .income-table {
+    margin: 0 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .income-container {
+    flex-direction: column;
+  }
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 250px;
+    height: 100vh;
+    z-index: 1000;
+    transition: left 0.3s ease;
+  }
+  .sidebar.open {
+    left: 0;
+  }
+  .main-content {
+    padding: 1rem;
+  }
+  .header {
+    padding: 1rem;
+    position: relative;
+  }
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    color: #4b3ed8;
+  }
+  .income-table {
+    margin: 0;
+    overflow-x: auto;
+    
+  }
+  .income-table table {
+    width: 100px;
+  }
+  .income-table th,
+  .income-table td {
+    padding: 8px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content {
+    padding: 0.5rem;
+  }
+  .header {
+    padding: 0.5rem;
+  }
+  .header h2 {
+    font-size: 18px;
+  }
+  .header-right {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .search-bar {
+    width: 100%;
+  }
+  .search-bar input {
+    width: 100%;
+  }
+  .profile {
+    display: none;
+  }
+  .income-table th,
+  .income-table td {
+    padding: 6px;
+    font-size: 15px;
+  }
+}

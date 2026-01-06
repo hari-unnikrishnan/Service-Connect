@@ -1,0 +1,248 @@
+/* Service Provider Verification Styles */
+
+.sp-container {
+  display: flex;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background: #f4f6ff;
+}
+
+.sp-sidebar {
+  width: 240px;
+  background: #4a3aff;
+  color: white;
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sp-logo {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.sp-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sp-sidebar li {
+  padding: 12px 10px;
+  margin: 6px 0;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: transparent;
+  color: white;
+}
+
+.sp-sidebar li.active {
+  background: white;
+  color: #4a3aff;
+}
+
+.sp-footer {
+  text-align: center;
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+.sp-main {
+  flex: 1;
+  padding: 25px 40px;
+  overflow-y: scroll;
+}
+
+.sp-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.sp-topbar h2 {
+  margin: 0;
+}
+
+.sp-search {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 10px 20px;
+  width: 260px;
+  border-radius: 50px;
+  gap: 10px;
+}
+
+.sp-search input {
+  border: none;
+  outline: none;
+  width: 100%;
+  background: transparent;
+}
+
+.sp-header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.sp-circle-icon {
+  background: white;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.sp-profile img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.sp-profile-card {
+  background: white;
+  padding: 0px;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.sp-banner {
+  height: 140px;
+  background: #4a3aff;
+  position: relative;
+}
+
+.sp-avatar {
+  width: 110px;
+  height: 110px;
+  background: #ddd;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -55px;
+  left: 30px;
+  border: 8px solid white;
+}
+
+.sp-more {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+
+.sp-details {
+  padding: 70px 30px 30px;
+}
+
+.sp-details h2 {
+  margin: 0;
+}
+
+.sp-rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 6px 0 20px;
+  font-weight: 600;
+}
+
+.sp-contact-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.sp-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sp-contact-item p:first-child {
+  margin: 0;
+  opacity: 0.6;
+  font-size: 13px;
+}
+
+.sp-contact-item p:last-child {
+  margin: 0;
+  font-weight: 600;
+}
+
+.sp-section-card {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  margin-bottom: 30px;
+}
+
+.sp-section-card h3 {
+  margin-bottom: 20px;
+}
+
+.sp-service-item, .sp-ads-item {
+  display: grid;
+  grid-template-columns: 80px 1fr 1fr 1fr;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.sp-service-icon, .sp-ads-icon {
+  width: 70px;
+  height: 70px;
+  background: #ddd;
+  border-radius: 12px;
+}
+
+.sp-service-name, .sp-ads-name {
+  font-weight: 600;
+}
+
+.sp-stats {
+  text-align: center;
+}
+
+.sp-stats p {
+  margin: 0;
+  opacity: 0.6;
+}
+
+.sp-stats small {
+  display: block;
+  font-size: 12px;
+}
+
+.sp-buttons {
+  margin-top: 30px;
+}
+
+.sp-verify-btn {
+  width: 100%;
+  padding: 14px;
+  background: #0A7A32;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.sp-decline-btn {
+  width: 100%;
+  padding: 14px;
+  background: #C62828;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}

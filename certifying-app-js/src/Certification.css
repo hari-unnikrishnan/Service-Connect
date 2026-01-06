@@ -1,0 +1,75 @@
+.certification-content {
+  padding: 20px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.certification-content h2 {
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.certification-section {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.certification-section h3 {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.certification-form-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.certification-form-field,
+.certification-select-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.certification-form-field p,
+.certification-select-field p {
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #333;
+}
+
+.certification-form-field input,
+.certification-select-field select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.certification-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.certification-cancel-btn,
+.certification-confirm-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.certification-cancel-btn {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.certification-confirm-btn {
+  background-color: #4a3aff;
+  color: white;
+}

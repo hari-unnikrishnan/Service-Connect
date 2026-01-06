@@ -1,0 +1,555 @@
+/* ============================
+   Payout Schedule Page Styles
+   Author: Hari Krishnan U
+   ============================ */
+
+/* ====== Base Layout ====== */
+.payout-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f4f5fb;
+  color: #333;
+  font-family: "Inter", sans-serif;
+}
+
+/* ====== Sidebar ====== */
+.sidebar {
+  width: 16rem;
+  background-color: #4328b7;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 24px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.logo-icon {
+  background-color: #f97316;
+  padding: 8px;
+  border-radius: 8px;
+  color: white;
+}
+
+.sidebar-nav {
+  margin-top: 1rem;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 24px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.sidebar-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-item.active {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-left: 4px solid #facc15;
+}
+
+.sidebar-footer {
+  padding: 24px;
+  font-size: 0.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: #d1d5db;
+}
+
+.footer-title {
+  font-weight: 600;
+}
+
+/* ====== Main Content ====== */
+.main-content {
+  flex: 1;
+  padding: 2rem;
+}
+
+/* ====== Header Section ====== */
+.page-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-right: 1px;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  color: #4328b7;
+  margin-right: 1rem;
+}
+
+.header-actions {
+  position: absolute;
+  right: 0;
+}
+
+.header-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* ====== Search Box ====== */
+.search-box {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  left: 22px;
+  top: 14px;
+  color: #9ca3af;
+}
+
+.search-input {
+  padding: 8px 14px 8px 34px;
+  border: 1px solid #ddd;
+  border-radius: 9999px;
+  outline: none;
+  font-size: 0.9rem;
+  transition: 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+}
+
+.header-icon {
+  color: #6b7280;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.header-icon:hover {
+  color: #4f46e5;
+}
+
+/* ====== Profile ====== */
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+
+.profile-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.profile-role {
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+
+/* ====== Payment Schedules ====== */
+.payment-section {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.5rem;
+  width: 78vw;
+}
+
+.section-title {
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 1rem;
+}
+
+.payment-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.payment-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9fafb;
+  padding: 12px 16px;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+.payment-item:hover {
+  background: #f3f4f6;
+}
+
+.payment-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.payment-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.payment-type {
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+/* Status Dot Colors */
+.status-dot.yellow {
+  color: #facc15;
+}
+.status-dot.green {
+  color: #22c55e;
+}
+.status-dot.gray {
+  color: #6b7280;
+}
+
+.payment-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.icon-edit,
+.icon-delete {
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.icon-edit:hover {
+  color: #2563eb;
+}
+
+.icon-delete:hover {
+  color: #dc2626;
+}
+
+/* ====== Form Section ====== */
+.form-section {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.form-label {
+  font-weight: 600;
+  font-size: 0.85rem;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.form-select,
+.form-input {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  transition: 0.2s ease;
+  background-color: #d1d5db;
+  color: #333;
+}
+
+.form-select:focus,
+.form-input:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.15);
+  outline: none;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 1rem;
+}
+
+.checkbox-group label {
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+/* ====== Balance Card ====== */
+.balance-card {
+  position: relative;
+  background: linear-gradient(145deg, #3a3a3a, #5a5a5a);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 16px;
+  width: 32vw;
+  height: 13vw;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Decorative light circles */
+.balance-card::before,
+.balance-card::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.balance-card::before {
+  width: 180px;
+  height: 180px;
+  top: -60px;
+  left: -60px;
+}
+
+.balance-card::after {
+  width: 120px;
+  height: 120px;
+  bottom: -40px;
+  right: -40px;
+}
+
+/* Button styling */
+.balance-btn {
+  position: absolute;
+  top: 7px;
+  right: 14px;
+  background: #707070;
+  color: white;
+  font-size: 12px;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.balance-btn:hover {
+  background: #5b5b5b;
+}
+
+/* Details inside the card */
+.balance-details {
+  margin-top: 10px;
+}
+
+.balance-name {
+  font-size: 14px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.balance-number {
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin: 6px 0;
+  opacity: 0.8;
+}
+
+.balance-label {
+  font-size: 12px;
+  color: #d4d4d4;
+  margin-top: 12px;
+}
+
+.balance-amount {
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffecb3;
+  margin-top: 5px;
+}
+
+/* ====== Form Actions ====== */
+.form-actions {
+  grid-column: span 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.status-select {
+  width: 180px;
+}
+
+.button-group {
+  display: flex;
+  gap: 12px;
+}
+
+.btn {
+  border: none;
+  border-radius: 8px;
+  padding: 10px 24px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.save-btn {
+  background-color: #4f46e5;
+  color: white;
+}
+
+.save-btn:hover {
+  background-color: #4338ca;
+}
+
+.delete-btn {
+  background-color: #ef4444;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #dc2626;
+}
+
+/* ====== Responsive Design ====== */
+@media (max-width: 1024px) {
+  .form-section {
+    grid-template-columns: 1fr;
+  }
+  .sidebar {
+    width: 14rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .payout-container {
+    flex-direction: column;
+  }
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 250px;
+    height: 100vh;
+    z-index: 1000;
+    transition: left 0.3s ease;
+  }
+  .sidebar.open {
+    left: 0;
+  }
+  .main-content {
+    padding: 1rem;
+  }
+  .page-header {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+  .header-title {
+    font-size: 20px;
+  }
+  .header-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .search-box {
+    width: 100%;
+    max-width: 300px;
+  }
+  .search-input {
+    width: 100%;
+  }
+  .profile-info {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+  }
+  .payment-section {
+    width: 100%;
+  }
+  .form-section {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .balance-card {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+  }
+  .balance-details {
+    margin-top: 8px;
+  }
+  .balance-amount {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-content {
+    padding: 0.5rem;
+  }
+  .page-header {
+    padding: 0.5rem;
+  }
+  .header-title {
+    font-size: 18px;
+  }
+  .payment-list {
+    gap: 8px;
+  }
+  .payment-item {
+    padding: 8px 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .payment-actions {
+    align-self: flex-end;
+  }
+  .form-label {
+    font-size: 0.8rem;
+  }
+  .form-select,
+  .form-input {
+    font-size: 0.85rem;
+    padding: 6px 8px;
+  }
+  .btn {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+  }
+}
+
+.form-selects {
+    padding: 8px 10px;
+    border: 1px solid #123f83;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    transition: 0.2s ease;
+    background-color: #ffffff;
+    color: #333;
+}

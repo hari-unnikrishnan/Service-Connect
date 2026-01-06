@@ -1,0 +1,188 @@
+/* Service Providers Verification Form Styles */
+
+.spvf-container {
+  display: flex;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background: #f4f6ff;
+}
+
+.spvf-sidebar {
+  width: 240px;
+  background: #4a3aff;
+  color: white;
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.spvf-logo {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.spvf-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.spvf-side-item {
+  padding: 12px 10px;
+  margin: 6px 0;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: transparent;
+  color: white;
+}
+
+.spvf-side-item.active {
+  background: white;
+  color: #4a3aff;
+}
+
+.spvf-footer {
+  text-align: center;
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+.spvf-footer p {
+  margin: 0;
+}
+
+.spvf-footer span {
+  display: block;
+}
+
+.spvf-main {
+  flex: 1;
+  padding: 25px 40px;
+}
+
+.spvf-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.spvf-search {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 10px 20px;
+  width: 280px;
+  border-radius: 50px;
+  gap: 10px;
+}
+
+.spvf-search input {
+  border: none;
+  outline: none;
+  width: 100%;
+  background: transparent;
+}
+
+.spvf-header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.spvf-circle-icon {
+  background: white;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.spvf-profile img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.spvf-main h2 {
+  margin: 20px 0 30px;
+}
+
+.spvf-form-box {
+    /* width: 420px; */
+    /* margin: auto; */
+    background: white;
+    padding: 40px 40px 30px;
+    border-radius: 18px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.spvf-form-field {
+  margin-bottom: 20px;
+}
+
+.spvf-form-field p {
+  margin: 0 0 6px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.spvf-form-field input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  outline: none;
+  font-size: 14px;
+  background-color: #ffffff;
+}
+
+.spvf-select-field {
+  margin-bottom: 20px;
+}
+
+.spvf-select-field p {
+  margin: 0 0 6px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.spvf-select-field select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  outline: none;
+  font-size: 14px;
+  background: white;
+}
+
+.spvf-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.spvf-cancel-btn {
+  padding: 12px 40px;
+  background: #c62828;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.spvf-confirm-btn {
+  padding: 12px 40px;
+  background: #4a3aff;
+  border-radius: 6px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}

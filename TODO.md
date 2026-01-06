@@ -1,0 +1,1 @@
+- [x] Update StatBox component width from 140px to 339px in certifying-app-js/src/Service provider management.jsx

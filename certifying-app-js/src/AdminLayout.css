@@ -1,0 +1,168 @@
+/* Overlay for mobile */
+.admin-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  z-index: 40;
+}
+
+/* Sidebar container */
+.admin-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 260px;
+  background: #362ca1;
+  color: #ffffff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  overflow-y: auto;
+}
+
+/* Show sidebar when open (for mobile) */
+.admin-sidebar.open {
+  transform: translateX(0);
+}
+
+/* Desktop: always visible */
+@media (min-width: 1024px) {
+  .admin-sidebar {
+    transform: translateX(0);
+  }
+
+  .admin-overlay {
+    display: none;
+  }
+
+  .admin-close-btn {
+    display: none;
+  }
+}
+
+/* Header */
+.admin-sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 24px;
+}
+
+.admin-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.admin-logo-icon {
+  width: 32px;
+  height: 32px;
+  background: #ff6b4a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+}
+
+.admin-logo-text {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+/* Close button (mobile only) */
+.admin-close-btn {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* Menu */
+.admin-menu {
+  flex: 1;
+  padding: 8px 0px 16px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Items */
+.admin-menu-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 16px;
+  border-radius: 999px 0 0 999px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.15s ease;
+  color: #e5e5ff;
+}
+
+.admin-menu-item:hover {
+  background: #5e4cff;
+  transform: translateX(2px);
+}
+
+.admin-menu-item-active {
+  background: #ffffff;
+  color: #4a3aff;
+}
+
+.admin-menu-item-active svg {
+  color: #4a3aff;
+}
+
+.admin-menu-icon {
+  font-size: 16px;
+}
+
+.admin-menu-label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* Footer */
+.admin-sidebar-footer {
+  padding: 16px 24px 20px;
+  font-size: 11px;
+}
+
+.footer-title {
+  font-weight: 600;
+}
+
+.footer-subtitle {
+  margin-top: 4px;
+  color: #d1d5db;
+}
+
+.admin-open-btn {
+    position: fixed;
+    top: 28px;
+    left: 10px;
+    background: #f8f9fc;
+    border: none;
+    color: #362ca1;
+    padding: 2px;
+    border-radius: 20px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+/* Hide open button when sidebar is visible in desktop */
+@media (min-width: 1024px) {
+  .admin-open-btn {
+    display: none;
+  }
+}
+
