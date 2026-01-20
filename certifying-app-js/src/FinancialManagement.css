@@ -1,17 +1,14 @@
 :root {
-  --bg: #F5F6FF;
-  --surface: #ffffff;
-  --ink: #1f2559;
-  --muted: #7C84A6;
-  --purple: #6b5cff;
-  --purple-700: #5948e0;
-  --shadow: 0 10px 30px rgba(20, 23, 55, .08);
-  --radius: 18px;
-
-  --orange: #FF8E41;
-  --red: #FF5B5B;
-  --green: #2ECC71;
-  --blue: #3A86FF;
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    /* line-height: 1.5; */
+    font-weight: 400;
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 * {
@@ -133,13 +130,13 @@ body {
 
 /* Main */
 .fm-main {
-  flex: 1;
-  padding: 28px;
-  margin-left: 263px;
-  transition: margin-left 0.3s ease;
-  background-color: #ffffff;
-  min-height: 415vh;
-  box-sizing: border-box;
+    flex: 1;
+    padding: 6px;
+    margin-left: 263px;
+    transition: margin-left 0.3s ease;
+    background-color: #ffffff;
+    /* min-height: 200vh; */
+    box-sizing: border-box;
 }
 
 @media (max-width: 992px) {
@@ -153,7 +150,7 @@ body {
     .fm-main {
         margin-left: 0px;
         padding: 16px;
-        min-height: 436vh;
+        /* min-height: 310vh; */
     }
 }
 

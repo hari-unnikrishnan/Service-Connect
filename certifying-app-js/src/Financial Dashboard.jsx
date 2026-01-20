@@ -37,16 +37,15 @@ const expenses = [
   { id: "#123456789", tag: "Unit charges", amount: "$ 50,036", date: "2 March 2021, 12:45 PM" },
   { id: "#123456789", tag: "Salary", amount: "$ 50,036", date: "2 March 2021, 12:45 PM" },
   { id: "#123456789", tag: "Rent", amount: "$ 50,036", date: "2 March 2021, 12:45 PM" },
-  { id: "#123456789", tag: "Salary", amount: "$ 50,036", date: "2 March 2021, 12:45 PM" },
-  { id: "#123456789", tag: "Salary", amount: "$ 50,036", date: "2 March 2021, 12:45 PM" },
+  
 ];
 
 const FinancialManagement = () => {
   return (
     <div className="fm-content">
       {/* Stat Cards */}
-      <section className="fm-stats" >
-        <div className="fm-stat"style={{ width: "127%" }}>
+      <section className="fm-stats">
+        <div className="fm-stat" style={{ width: "107%" }}>
           <div className="fm-stat-icon fm-blue"><TrendingUp size={18}/></div>
           <div className="fm-stat-body">
             <p>Revenue</p>
@@ -54,8 +53,7 @@ const FinancialManagement = () => {
             <span className="pos">+10% than last month</span>
           </div>
         </div>
-
-        <div className="fm-stat"style={{ width: "127%" }}>
+        <div className="fm-stat" style={{ width: "107%" }}>
           <div className="fm-stat-icon fm-orange"><TrendingDown size={18}/></div>
           <div className="fm-stat-body">
             <p>Expense</p>
@@ -63,7 +61,6 @@ const FinancialManagement = () => {
             <span className="neg">-0.5% than last month</span>
           </div>
         </div>
-
         <div className="fm-stat fm-wide" style={{ width: "97%" }}>
           <div className="fm-stat-icon fm-green"><DollarSign size={18}/></div>
           <div className="fm-stat-body">

@@ -3,6 +3,7 @@ import { Routes, Route, useLocation, useNavigate } from 'react-router-dom';
 import { Search } from "lucide-react";
 import { IoMdMenu } from "react-icons/io";
 import AdminSideMenu from './AdminSideMenu';
+import AdminLayout from './AdminLayout';
 import FinancialManagement from './Financial Dashboard';
 import IncomeManagement from './IncomeManagement';
 import AccountsPage from './AccountsPage';
@@ -10,10 +11,12 @@ import NotificationManagement from './NotificationManagement';
 import PayoutSchedule from './PayoutSchedule';
 import FranchiseeDashboard from './FranchiseeDashboard';
 import PropertiesPage from './PropertiesPage';
+import Profile from './Profile';
 import ServiceProvider from './Service Provider';
 import ServiceProviderManagement from './Service provider management';
 import ServiceProvidersVerificationForm from './Service Providers Verification Form';
 import ServiceVerification from './Service Verification';
+import Chat from './chat';
 import financialImg from "./assets/image/Placeholder.png";
 
 function App() {
@@ -173,8 +176,8 @@ function App() {
             <Route path="/service-providers" element={<ServiceProviderManagement />} />
             <Route path="/franchisee" element={<PayoutSchedule />} />
             <Route path="/finance" element={<FranchiseeDashboard />} />
-            <Route path="/profile" element= {<PropertiesPage />} /> 
-            <Route path="/chat" element={<div>Chat Page Placeholder</div>} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/chat" element={<Chat />} />
             <Route path="/settings" element={<ServiceProvider/>} />
             <Route path="/service-management" element={<div>Service Management Page Placeholder</div>} />
             <Route path="/ads-management" element={<div>Ads Management Page Placeholder</div>} />
