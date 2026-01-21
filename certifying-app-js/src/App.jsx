@@ -26,10 +26,18 @@ function App() {
   const navigate = useNavigate();
 
   useEffect(() => {
+    // Handle GitHub Pages query routing
+    const query = new URLSearchParams(location.search);
+    const queryPath = query.get('/');
+    if (queryPath) {
+      navigate(queryPath, { replace: true });
+      return;
+    }
+
     const path = location.pathname;
     const view = getViewFromPath(path);
     setCurrentView(view);
-  }, [location.pathname]);
+  }, [location.pathname, location.search, navigate]);
 
   const getPathFromLabel = (label) => {
     switch (label) {
@@ -184,6 +192,7 @@ function App() {
             <Route path="/notifications" element={<NotificationManagement />} />
             <Route path="/service-providers-verification-form" element={<ServiceProvidersVerificationForm />} />
             <Route path="/service-verification" element={<ServiceVerification />} />
+            <Route path="/properties" element={<PropertiesPage />} />
           </Routes>
         </div>
       </main>
