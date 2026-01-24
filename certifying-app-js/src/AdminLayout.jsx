@@ -6,6 +6,8 @@ import "./AdminLayout.css";
 import AdminSideMenu from "./AdminSideMenu"; // ⬅️ import your sidebar with icons
 
 // (page imports here...)
+import AdsManagement from "./AdsManagement";
+import ServiceManagement from "./ServiceManagement";
 
 const labelToPath = {
   "Dashboard": "/dashboard",

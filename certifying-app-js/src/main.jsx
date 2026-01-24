@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ReactDOM from "react-dom/client";
 import { Routes, Route, useLocation, useNavigate } from 'react-router-dom';
-import { HashRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import { Search } from "lucide-react";
 import { IoMdMenu } from "react-icons/io";
 import AdminSideMenu from './AdminSideMenu';
@@ -19,6 +19,8 @@ import ServiceProviderManagement from './Service provider management';
 import ServiceProvidersVerificationForm from './Service Providers Verification Form';
 import ServiceVerification from './Service Verification';
 import Chat from './chat';
+import AdsManagement from './AdsManagement';
+import ServiceManagement from './ServiceManagement';
 import financialImg from "./assets/image/Placeholder.png";
 import './index.css'
 
@@ -190,8 +192,8 @@ export function App() {
             <Route path="/profile" element={<Profile />} />
             <Route path="/chat" element={<Chat />} />
             <Route path="/settings" element={<ServiceProvider/>} />
-            <Route path="/service-management" element={<div>Service Management Page Placeholder</div>} />
-            <Route path="/ads-management" element={<div>Ads Management Page Placeholder</div>} />
+            <Route path="/service-management" element={<ServiceManagement />} />
+            <Route path="/ads-management" element={<AdsManagement />} />
             <Route path="/notifications" element={<NotificationManagement />} />
             <Route path="/service-providers-verification-form" element={<ServiceProvidersVerificationForm />} />
             <Route path="/service-verification" element={<ServiceVerification />} />
@@ -205,8 +207,8 @@ export function App() {
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <HashRouter>
+    <BrowserRouter>
       <App />
-    </HashRouter>
+    </BrowserRouter>
   </React.StrictMode>,
 )
