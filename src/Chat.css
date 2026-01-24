@@ -12,10 +12,12 @@
     z-index: 1000;
 } */
 
-
+.h2{
+  margin-left: 10px;
+}
 /* Glass Card */
 .chat-container {
-  height: 530px;
+  height: 788px;
 
   /* Fallback for unsupported browsers */
   background: rgba(255, 255, 255, 0.85);
