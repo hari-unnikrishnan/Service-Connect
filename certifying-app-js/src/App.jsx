@@ -1,25 +1,26 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, lazy, Suspense } from 'react';
 import { Routes, Route, useLocation, useNavigate } from 'react-router-dom';
 import { Search } from "lucide-react";
 import { IoMdMenu } from "react-icons/io";
 import AdminSideMenu from './AdminSideMenu';
 import AdminLayout from './AdminLayout';
-import FinancialManagement from './Financial Dashboard';
-import IncomeManagement from './IncomeManagement';
-import AccountsPage from './AccountsPage';
-import NotificationManagement from './NotificationManagement';
-import PayoutSchedule from './PayoutSchedule';
-import FranchiseeDashboard from './FranchiseeDashboard';
-import PropertiesPage from './PropertiesPage';
-import Profile from './Profile';
-import ServiceProvider from './Service Provider';
-import ServiceProviderManagement from './Service provider management';
-import ServiceProvidersVerificationForm from './Service Providers Verification Form';
-import ServiceVerification from './Service Verification';
-import Chat from './chat';
-import AdsManagement from './AdsManagement';
-import ServiceManagement from './ServiceManagement';
 import financialImg from "./assets/image/Placeholder.png";
+
+const FinancialManagement = lazy(() => import('./Financial Dashboard'));
+const IncomeManagement = lazy(() => import('./IncomeManagement'));
+const AccountsPage = lazy(() => import('./AccountsPage'));
+const NotificationManagement = lazy(() => import('./NotificationManagement'));
+const PayoutSchedule = lazy(() => import('./PayoutSchedule'));
+const FranchiseeDashboard = lazy(() => import('./FranchiseeDashboard'));
+const PropertiesPage = lazy(() => import('./PropertiesPage'));
+const Profile = lazy(() => import('./Profile'));
+const ServiceProvider = lazy(() => import('./Service Provider'));
+const ServiceProviderManagement = lazy(() => import('./Service provider management'));
+const ServiceProvidersVerificationForm = lazy(() => import('./Service Providers Verification Form'));
+const ServiceVerification = lazy(() => import('./Service Verification'));
+const Chat = lazy(() => import('./chat'));
+const AdsManagement = lazy(() => import('./AdsManagement'));
+const ServiceManagement = lazy(() => import('./ServiceManagement'));
 
 function App() {
   const [currentView, setCurrentView] = useState('FinancialManagement');

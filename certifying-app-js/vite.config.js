@@ -8,4 +8,11 @@ export default defineConfig(({ command }) => ({
   server: {
     historyApiFallback: true,
   },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
+    },
+  },
 }))
