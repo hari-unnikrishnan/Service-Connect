@@ -1,6 +1,6 @@
-import "./Profile.css";
+ import "./Profile.css";
 import { FaUserShield, FaPhoneAlt, FaEnvelope, FaIdBadge } from "react-icons/fa";
-import profileimage from "./assets/image/profile image.png";
+import profileimage from "./assets/image/profileimage.png";
 
 const Profile = () => {
   return (

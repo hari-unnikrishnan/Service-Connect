@@ -9,6 +9,7 @@ import {
 import "./FinancialManagement.css";
 import GraphlImg from "./assets/image/Graph.png";
 import icon2imag from "./assets/image/icon2.png";
+import financialImg from "./assets/image/Placeholder.png";
 
 const chartData = [
   { month: "Jan", income: 18, expense: 12 },
@@ -68,7 +69,7 @@ const FinancialManagement = () => {
             <h3>$123,456</h3>
             <span className="pos">+23% than last month</span>
           </div>
-          <img src={GraphlImg} alt="GraphlImg" className="fm-Graph" />
+          <img src={financialImg} alt="financialImg" className="fm-Graph" />
         </div>
       </section>
 
